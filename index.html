@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeAlpha · Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator" role="application" aria-label="Calculator">
+  
+
+    <div class="display">
+      <div class="history" id="history" aria-live="polite"></div>
+      <div class="current" id="current" aria-live="polite">0</div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn btn-fn" data-action="clear"        id="btnClear">AC</button>
+      <button class="btn btn-fn" data-action="delete"       id="btnDelete">DEL</button>
+      <button class="btn btn-fn" data-action="percent"      id="btnPercent">%</button>
+      <button class="btn btn-op" data-action="operator" data-op="/">÷</button>
+
+      <button class="btn btn-num" data-num="7">7</button>
+      <button class="btn btn-num" data-num="8">8</button>
+      <button class="btn btn-num" data-num="9">9</button>
+      <button class="btn btn-op" data-action="operator" data-op="*">×</button>
+
+      <button class="btn btn-num" data-num="4">4</button>
+      <button class="btn btn-num" data-num="5">5</button>
+      <button class="btn btn-num" data-num="6">6</button>
+      <button class="btn btn-op" data-action="operator" data-op="-">−</button>
+
+      <button class="btn btn-num" data-num="1">1</button>
+      <button class="btn btn-num" data-num="2">2</button>
+      <button class="btn btn-num" data-num="3">3</button>
+      <button class="btn btn-op" data-action="operator" data-op="+">+</button>
+
+      <button class="btn btn-num btn-zero" data-num="0">0</button>
+      <button class="btn btn-num" data-num=".">.</button>
+      <button class="btn btn-equals" data-action="equals">=</button>
+    </div>
+
+    <p class="hint">💡 Tip: Use your keyboard — numbers, <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd>, <kbd>Enter</kbd>, <kbd>Backspace</kbd>, <kbd>Esc</kbd></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
